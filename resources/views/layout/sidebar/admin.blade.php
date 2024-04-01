@@ -11,7 +11,7 @@
         @can("viewAny", App\Models\Category::class)
             <li class="nav-item">
                 <a href="{{route("categories.index")}}" class="nav-link {{ $category_menu ?? "" }}">
-                    <i class="fas fa-users"></i>
+                    <i class="fas fa-bars"></i>
                     <p>Category</p>
                 </a>
             </li>
