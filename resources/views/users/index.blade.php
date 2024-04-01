@@ -41,7 +41,7 @@
                             <td>
                                 <div class="btn-group" role="group">
                                     @can("view", $user)
-                                        <a href="{{ route('users.show', $user->id ) }}" 
+                                        <a href="{{ route('users.show', $user->id ) }}"
                                         class="btn btn-info btn-sm"
                                         title="View User">
                                             <i class="far fa-eye"></i>
@@ -54,7 +54,7 @@
                                         </a>
                                     @endcan
                                     @can("delete", $user)
-                                        <button type="button" class="btn btn-danger btn-sm" 
+                                        <button type="button" class="btn btn-danger btn-sm"
                                                 title="ডিলেট করুন"
                                                 data-toggle="modal"
                                                 data-target="#delete-{{$index}}">
@@ -78,7 +78,7 @@
         @endif
     </div>
     @foreach($users as $index=>$user)
-        @can("delete", $user)        
+        @can("delete", $user)
             <form method="POST" action="{!! route('users.destroy', $user->id) !!}" accept-charset="UTF-8">
                 @method("DELETE")
                 @csrf

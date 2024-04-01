@@ -1,7 +1,13 @@
-<?php 
+<?php
 return [
     "available_permissions" => [
         "users" => [
+            "view",
+            "create",
+            "update",
+            "delete"
+        ],
+        "categories" => [
             "view",
             "create",
             "update",

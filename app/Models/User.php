@@ -42,7 +42,7 @@ class User extends Authenticatable
                 return asset("storage/uploads/$value");
             }
         );
-    }  
+    }
 
     public function roleUser(){
         return $this->hasOne(RoleUser::class, "user_id", "id");

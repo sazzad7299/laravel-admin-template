@@ -58,8 +58,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="{{ route("dashboard") }}" class="brand-link">
-      <img src="{{ setting("logo", asset("images/logo.png")) }}" 
-           alt="{{ setting("title", "") }}" 
+      <img src="{{ setting("logo", asset("images/logo.png")) }}"
+           alt="{{ setting("title", "") }}"
            class="brand-image elevation-3"
            style="width:60px;height:60px">
       <span class="brand-text font-weight-light">Admin Panel</span>
@@ -70,7 +70,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="{{ $current_user->image }}" 
+          <img src="{{ $current_user->image }}"
                class="img-circle elevation-2" alt="{{$current_user->name}}">
         </div>
         <div class="info">
@@ -149,5 +149,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <script src="{{asset("plugins/bootstrap/js/bootstrap.bundle.min.js")}}"></script>
 <script src="{{asset("js/adminlte.min.js")}}"></script>
 <script src="{{asset("js/script.js")}}"></script>
+@stack('scripts')
 </body>
 </html>

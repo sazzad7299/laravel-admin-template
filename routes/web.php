@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Auth\LogInController;
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\UsersController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
@@ -27,6 +28,7 @@ Route::resource("users", UsersController::class, ["names" => "users"]);
 Route::resource("roles", RolesController::class, ["names" => "roles"]);
 Route::resource("permissions", PermissionsController::class, ["names" => "permissions"])->except(["create", "store"]);
 Route::resource("logs", LogsController::class, ["names" => "logs"])->only(["index", "show"]);
+Route::resource("categories", CategoryController::class, ["names" => "categories"])->except(["show"]);
 
 //Authentication Routes
 Route::get("/login", [LogInController::class, "showLoginForm"])->name("login.show");
