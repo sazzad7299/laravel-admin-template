@@ -30,7 +30,7 @@ Credentials for Admin is
  - Password: 123456
 
 
- **Also This Project runs on php 8.1+** 
+ **Also This Project runs on php 8.2+** 
 
  **If any problem with composer arises delete composer.lock file and vendor folder from project directory then run composer install again** 
 
